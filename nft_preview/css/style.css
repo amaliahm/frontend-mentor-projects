@@ -1,0 +1,197 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+    min-height: 100svh;
+    background-color: #08222f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 327px;
+    height: 543px;
+    background-color: #0e2b41;
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .image {
+    position: relative;
+}
+
+main .image img[alt=equilibrium] {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+main .image::after {
+    background-color: rgba(0, 255, 247, 0.3921568627);
+    content: url(../images//icon-view.svg);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .image:hover::after {
+    opacity: 1;
+}
+
+main .image img[alt=view] {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+main .info {
+    margin-top: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px #2a4354 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main .info h1 {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    line-height: 28px;
+    transition: color 0.5s linear;
+}
+
+main .info h1:hover {
+    color: #00fff8;
+    cursor: pointer;
+}
+
+main .info p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #8bacd9;
+    font-weight: 300;
+    text-align: left;
+    line-height: 26px;
+}
+
+main .info .numbers {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .info .numbers div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+
+main .info .numbers div img[alt=ethereum] + span,
+main .info .numbers div img[alt=clock] + span {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+main .info .numbers div img[alt=ethereum] + span {
+    color: #00fff8;
+}
+
+main .info .numbers div img[alt=clock] + span {
+    color: #8bacd9;
+}
+
+main .author {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+}
+
+main .author img {
+    width: 33px;
+    border-radius: 50%;
+    border: white 1px solid;
+}
+
+main .author .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+}
+
+main .author .person p {
+    font-size: 15px;
+    color: #8bacd9;
+    font-weight: 400;
+    text-align: left;
+}
+
+main .author .person span {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    transition: color 0.5s linear;
+}
+
+main .author .person span:hover {
+    color: #00fff8;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) {
+    main {
+        width: 350px;
+        height: 596px;
+        border-radius: 15px;
+        background-color: #0e2b41;
+    }
+
+    main .info {
+        padding-bottom: 24px;
+    }
+
+    main .info p {
+        margin-top: 16px;
+    }
+
+    main .info .numbers {
+        margin-top: 24px;
+    }
+}
