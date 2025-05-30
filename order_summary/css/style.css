@@ -1,0 +1,260 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* styling */
+
+body {
+    background-color: #e0e8ff;
+    min-height: 100svh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 15px;
+}
+
+main {
+    width: 100%;
+    max-width: 327px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    background-image: url('../images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: scroll;
+    background-size: 100% 160px;
+    padding: 170px 24px 24px 24px;
+}
+
+main h1 {
+    font-size: 22px;
+    color: #1f2e55;
+    font-weight: 900;
+    text-align: center;
+    margin: 32px 0 16px 0;
+}
+
+main p {
+    max-width: 263px;
+    height: 75px;
+    font-size: 15px;
+    color: #717fa6;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+}
+
+main .plan {
+    width: 100%;
+    height: auto;
+    border-radius: 11px;
+    background-color: #f7f9ff;
+    padding: 17px 16px 16px 16px;
+    margin: 24px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .plan div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+main .plan div img {
+    width: 48px;
+}
+
+main .plan div div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3px;
+    text-align: left;
+    align-self: center;
+}
+
+main .plan div div span:nth-of-type(1) {
+    font-size: 14px;
+    color: #1f2e55;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 0;
+}
+
+main .plan div div span:nth-of-type(2) {
+    font-size: 14px;
+    color: #717fa6;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+}
+
+main .plan span {
+    font-size: 13px;
+    color: #382ae1;
+    font-weight: 700;
+    text-align: left;
+}
+
+main .plan span a {
+    text-decoration: underline;
+}
+
+main .plan span a:hover {
+    color: #766cf1;
+}
+
+main button {
+    width: 100%;
+    border-radius: 11px;
+    background-color: #382ae1;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: 0 20px 20px rgba(57, 42, 225, 0.2274509804);
+}
+
+main button:hover {
+    background-color: #766bf1;
+}
+
+main h2 {
+    font-size: 15px;
+    color: #717fa6;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 24px;
+}
+
+main h2:hover {
+    cursor: pointer;
+    color: #1f2e55;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
+
+    main {
+        max-width: 450px;
+        background-size: 100% 220px;
+        padding: 200px 36px 36px 36px;
+    }
+
+    main h1 {
+        font-size: 28px;
+        margin: 85px 0 17px 0;
+    }
+
+    main p {
+        max-width: 354px;
+        font-size: 16px;
+    }
+
+    main .plan {
+        margin: 20px 0 32px 0;
+        padding: 25px 24px;
+    }
+
+    main .plan div div {
+        row-gap: 6px;
+    }
+
+    main .plan div div span:nth-of-type(1),
+    main .plan div div span:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    main .plan span {
+        font-size: 14px;
+    }
+
+    main h2 {
+        margin-top: 35px;
+    }
+}
