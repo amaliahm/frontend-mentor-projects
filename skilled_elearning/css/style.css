@@ -1,0 +1,542 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* styling */
+
+#wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+header {
+  width: 343px;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 38px 0;
+}
+
+header span {
+  font-size: 28px;
+  color: #13183f;
+  font-weight: 800;
+  text-align: center;
+  line-height: 35px;
+}
+
+header button {
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: #13183f;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 6px;
+}
+
+header button:hover {
+  background-color: #666ca3;
+}
+
+main {
+  width: 375px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 46px;
+  padding: 0 16px 66px 16px;
+}
+
+main article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main article h1 {
+  font-size: 40px;
+  color: #13183f;
+  font-weight: 800;
+  text-align: left;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+
+main article p {
+  font-size: 16px;
+  color: #83869a;
+  font-weight: 500;
+  text-align: left;
+  line-height: 26px;
+  margin-bottom: 24px;
+  width: 343px;
+}
+
+main article button {
+  width: 167px;
+  height: 56px;
+  border-radius: 31.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  line-height: 26px;
+}
+
+main article button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+main section {
+  width: 327px;
+  height: 301px;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid white 1px;
+  background-image: url("../assets/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: -54px -20px;
+  background-size: 433px;
+}
+
+summary {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  padding-bottom: 80px;
+}
+
+summary #full-width {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+summary #firstbox {
+  width: 343px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: transparent;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 24px 28px;
+}
+
+summary #firstbox h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+  text-align: left;
+  line-height: 32px;
+}
+
+summary .box {
+  position: relative;
+  width: 343px;
+  height: 259px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 56px 28px 30px 28px;
+}
+
+summary .box h1 {
+  font-size: 20px;
+  color: #13183f;
+  font-weight: 800;
+  text-align: left;
+  line-height: 25px;
+}
+
+summary .box p {
+  font-size: 16px;
+  color: #83869a;
+  font-weight: 500;
+  text-align: left;
+  line-height: 26px;
+  margin-top: 16px;
+}
+
+summary .box h2 {
+  font-size: 18px;
+  color: #f74780;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  bottom: 32px;
+  left: 28px;
+}
+
+summary .box .circle {
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  border-radius: 0;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #13183f;
+}
+
+footer div {
+  width: 343px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div span {
+  font-size: 28px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+footer div button {
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: white;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 6px;
+}
+
+footer div button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+@media only screen and (min-width: 768px) {
+  #wrapper {
+    background-image: url(../assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right -290px top -76px;
+    background-size: 680px;
+  }
+
+  header {
+    width: 688px;
+    margin: 24px 0 102px 0;
+  }
+
+  main {
+    width: 768px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px 210px 40px;
+  }
+
+  main article {
+    width: 398px;
+    height: 284px;
+  }
+
+  main article p {
+    width: 400px;
+  }
+
+  main section {
+    display: none;
+  }
+
+  summary {
+    padding-bottom: 86px;
+  }
+
+  summary #full-width {
+    width: 768px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 11px;
+    column-gap: 11px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+  }
+
+  summary #firstbox {
+    width: 339px;
+    height: 259px;
+    border-radius: 10px;
+    background-color: transparent;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    padding: 56px 32px;
+  }
+
+  summary #firstbox h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    text-align: left;
+    line-height: 32px;
+  }
+
+  summary .box {
+    width: 339px;
+    height: 259px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 56px 22px 32px 32px;
+  }
+
+  summary .box h2 {
+    bottom: 32px;
+    left: 32px;
+  }
+
+  footer div {
+    width: 688px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #wrapper {
+    background-image: url(../assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right -295px top -115px;
+    background-size: 950px;
+  }
+
+  header {
+    width: 1110px;
+    margin: 24px 0 164px 0;
+  }
+
+  header span {
+    font-size: 36px;
+    color: #13183f;
+    font-weight: 800;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  header button {
+    width: 167px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #13183f;
+    font-size: 18px;
+  }
+
+  main {
+    width: 1440px;
+    padding: 0 165px 250px 165px;
+  }
+
+  main article {
+    width: 457px;
+    height: 359px;
+  }
+
+  main article h1 {
+    font-size: 56px;
+    color: #13183f;
+    font-weight: 800;
+    text-align: left;
+    line-height: 71px;
+    margin-bottom: 29px;
+  }
+
+  main article p {
+    width: 422px;
+    font-size: 18px;
+    color: #83869a;
+    font-weight: 500;
+    text-align: left;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  main article button {
+    width: 167px;
+    height: 63px;
+    border-radius: 31.5px;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  summary {
+    padding-bottom: 140px;
+  }
+
+  summary #full-width {
+    width: 1130px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  summary #firstbox {
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    background-color: transparent;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    padding: 64px 32px;
+  }
+
+  summary #firstbox h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: 800;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  summary .box {
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 64px 32px 40px 32px;
+  }
+
+  summary .box h1 {
+    font-size: 24px;
+  }
+
+  summary .box p {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  summary .box h2 {
+    bottom: 40px;
+    left: 32px;
+  }
+
+  footer div {
+    width: 1110px;
+  }
+
+  footer div span {
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  footer div button {
+    width: 167px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: white;
+    background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+  }
+}
