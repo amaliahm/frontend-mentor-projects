@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <title>Interactive Card</title>
+    
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="credit-card">
+        <div id="back">
+          <div id="engraved-cvc">000</div>
+        </div>
+        <div id="front">
+          <div class="circles"></div>
+          <div id="engraved-number">0000 0000 0000 0000</div>
+          <div id="engraved-name">Jane Appleseed</div>
+          <div id="engraved-month">01</div>
+          <div id="engraved-dash">/</div>
+          <div id="engraved-year">27</div>
+        </div>
+      </div>
+
+      <div class="form">
+        <fieldset class="name">
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="name" />
+          <span class="error"></span>
+        </fieldset>
+
+        <fieldset class="number">
+          <label for="number">CARD NUMBER</label>
+          <input type="text" pattern="\d*" placeholder="e.g. 1234 5678 9123 0000" id="number" maxlength="19" />
+          <span class="error"></span>
+        </fieldset>
+
+        <fieldset class="date">
+          <label for="month" id="lable-year">EXP. DATE (MM/YY)</label>
+          <input type="text" pattern="\d*" placeholder="MM" id="month" maxlength="2" />
+          <input type="text" pattern="\d*" placeholder="YY" id="year" maxlength="2" />
+          <span class="error"></span>
+          <span class="error"></span>
+        </fieldset>
+
+        <fieldset class="cvc">
+          <label for="cvc">CVC</label>
+          <input type="text" placeholder="e.g. 123" id="cvc" maxlength="4" />
+          <span class="error"></span>
+        </fieldset>
+
+        <button>CONFIRM</button>
+      </div>
+
+      <div class="success">
+        <img src="images/tick.png" alt="" />
+        <h1>thank you</h1>
+        <p>We’ve added your card details</p>
+        <button>Continue</button>
+      </div>
+    </main>
+    <script src="js/js.js"></script>
+  </body>
+</html>
